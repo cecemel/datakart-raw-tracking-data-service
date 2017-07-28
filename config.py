@@ -10,10 +10,9 @@ def load_config(environment="DEBUG"):
     config = {}
 
     config["LOG_LEVEL"] = logging.INFO
+    config["DB"] = "/data/tracking-data.db"
 
     if not environment == "DEBUG":
         config["LOG_LEVEL"] = logging.INFO
-
-
 
     return config
